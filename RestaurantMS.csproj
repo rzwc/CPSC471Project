@@ -17,4 +17,12 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.3" />
   </ItemGroup>
 
+  <Target Name="FixDotnetWatch" AfterTargets="_CoreCollectWatchItems">
+    <ItemGroup>
+      <_WatchRelativePath Include="@(Watch)" Condition="'%(Identity)' != '%(Watch.FullPath)'" />
+      <Watch Remove="@(_WatchRelativePath)" />
+      <Watch Include="%(_WatchRelativePath.FullPath)" />
+    </ItemGroup>
+  </Target>
+
 </Project>
