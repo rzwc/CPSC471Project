@@ -1,0 +1,112 @@
+@{
+    ViewData["Title"] = "Prepare Order";
+}
+
+<div>
+    <hr class="invisiblehr">
+    <h4 class="display-4 text-center">Prepare Orders</h4>
+    <hr>
+
+    <h4 class="text-center">Current Orders</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Order Number</th>
+                <th scope="col">Contents</th>
+                <th scope="col">Size</th>
+                <th scope="col">Total Cost ($)</th>
+                <th scope="col">Transaction Time</th>
+                <th scope="col">Assigned Driver</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Pancakes</td>
+                <td>Large</td>
+                <td>8.80</td>
+                <td>December 25, 2021 13:05</td>
+                <td>
+                    <select name="assignedDriver" id="assignedDriverOrder1" class="custom-select">
+                        <option value=""></option>
+                        <option value="RChow">Richard Chow</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Pasta</td>
+                <td>Medium</td>
+                <td>10.45</td>
+                <td>December 25, 2021 13:06</td>
+                <td>
+                    <select name="assignedDriver" id="assignedDriverOrder1" class="custom-select">
+                        <option value=""></option>
+                        <option value="RChow">Richard Chow</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Salad</td>
+                <td>Small</td>
+                <td>4.40</td>
+                <td>December 25, 2021 13:07</td>
+                <td>
+                    <select name="assignedDriver" id="assignedDriverOrder1" class="custom-select">
+                        <option value=""></option>
+                        <option value="RChow">Richard Chow</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr class="invisiblehr">
+
+    <h4 class="text-center">Recently Finished Orders</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Order Number</th>
+                <th scope="col">Contents</th>
+                <th scope="col">Size</th>
+                <th scope="col">Total Cost ($)</th>
+                <th scope="col">Transaction Time</th>
+                <th scope="col">Delivery Time</th>
+                <th scope="col">Assigned Driver</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">4</th>
+                <td>Pancakes</td>
+                <td>Large</td>
+                <td>8.80</td>
+                <td>December 25, 2021 13:05</td>
+                <td>December 25, 2021 13:25</td>
+                <td>Richard Chow</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Pasta</td>
+                <td>Medium</td>
+                <td>10.45</td>
+                <td>December 25, 2021 13:06</td>
+                <td>December 25, 2021 13:27</td>
+                <td>Richard Chow</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Salad</td>
+                <td>Small</td>
+                <td>4.40</td>
+                <td>December 25, 2021 13:07</td>
+                <td>December 25, 2021 13:29</td>
+                <td>Richard Chow</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

@@ -1,0 +1,430 @@
+@{
+    ViewData["Title"] = "Manage Restaurant";
+}
+
+<div>
+    <hr class="invisiblehr">
+    <h4 class="display-4 text-center">Manage Restaurant</h4>
+    <hr>
+
+    <h4 class="text-center">Employees</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Vo</td>
+                <td>Tony</td>
+                <td>Cook</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#id1">
+                        <i class="lni lni-cog"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Chow</td>
+                <td>Richard</td>
+                <td>Delivery Driver</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#id2">
+                        <i class="lni lni-cog"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Grande</td>
+                <td>Leinard</td>
+                <td>Manager</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#id3">
+                        <i class="lni lni-cog"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr class="invisiblehr">
+    <h4 class="text-center">Restaurant Details</h4>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="restaurantName">Restaurant Name</label>
+                <input type="text" class="form-control" id="restaurantName" value="Joe's Diner">
+            </div>
+            <div class="form-group">
+                <label for="restaurantMissionStatement">Restaurant Mission Statement</label>
+                <input type="text" class="form-control" id="restaurantMissionStatement" value="Our mission is to serve great food, provide superb service, and ensure each customer leaves with a smile!">
+            </div>
+            <div class="form-group">
+                <label for="restaurantAddress">Address</label>
+                <input type="text" class="form-control" id="restaurantAddress" value="123 Main Ave, North Pole, H0H 0H0, Canada">
+            </div>
+            <div class="form-group">
+                <label for="restaurantPhoneNumber">Phone Number</label>
+                <input type="text" class="form-control" id="restaurantPhoneNumber" value="(111) 222-3333">
+            </div>
+            <div class="form-group">
+                <label for="restaurantEmail">Email Address</label>
+                <input type="email" class="form-control" id="restaurantEmail" value="contact@JoesDiner.ca">
+            </div>
+            <div class="float-md-right">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <hr class="invisiblehr">
+    <h4 class="text-center">All Delivery Cars</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">License Plate</th>
+                <th scope="col">Colour</th>
+                <th scope="col">Model</th>
+                <th scope="col">Mileage (km)</th>
+                <th scope="col">Active?</th>
+                <th scope="col">Latitude</th>
+                <th scope="col">Longitude</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">125419</th>
+                <td>Red</td>
+                <td>Kia Soul 2020</td>
+                <td>123</td>
+                <td>True</td>
+                <td>90.0000° N</td>
+                <td>135.0000° W</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carid1">
+                        <i class="lni lni-cog"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">914521</th>
+                <td>Blue</td>
+                <td>Kia Soul 2020</td>
+                <td>321</td>
+                <td>True</td>
+                <td>90.0000° N</td>
+                <td>135.0000° W</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carid2">
+                        <i class="lni lni-cog"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr class="invisiblehr">
+    <h4 class="text-center">Customer Reviews</h4>
+    <p class="text-center">Restaurant average rating: 4.67/5</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Rating</th>
+                <th scope="col">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">John Customer</th>
+                <td>5</td>
+                <td>Really enjoyed the food here. Can't wait to visit again!</td>
+            </tr>
+            <tr>
+                <th scope="row">Erin Client</th>
+                <td>5</td>
+                <td>I love the atmosphere and the food here!</td>
+            </tr>
+            <tr>
+                <th scope="row">Sam Person</th>
+                <td>4</td>
+                <td>My eggs were too salty!</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr class="invisiblehr">
+
+    <div class="modal fade" id="id1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Employee ID #1</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="employeeLName">Last Name</label>
+                        <input type="text" class="form-control" id="employeeLName" value="Vo">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeFName">First Name</label>
+                        <input type="text" class="form-control" id="employeeFName" value="Tony">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeAddress">Address</label>
+                        <input type="text" class="form-control" id="employeeAddress" value="7868 Main St, North Pole, H0H 0H0, Canada">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeePhoneNumber">Phone Number</label>
+                        <input type="text" class="form-control" id="employeePhoneNumber" value="(111) 369-7868">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">Email Address</label>
+                        <input type="email" class="form-control" id="employeeEmail" value="tony@vo.ca">
+                    </div>
+                    <p><b>Employee-related details</b></p>
+                    <div class="form-group">
+                        <label for="employeeRole">Role</label>
+                        <select name="employeeRole" id="employeeRole" class="custom-select">
+                            <option value="Manager">Manager</option>
+                            <option selected value="Cook">Cook</option>
+                            <option value="Delivery Driver">Delivery Driver</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">Wage</label>
+                        <input type="number" class="form-control" id="employeeWage" value="20.00" min="15.00" step=".01">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">SIN</label>
+                        <input type="number" class="form-control" id="employeeWage" value="123123123">
+                    </div>
+                    <div class="float-md-right">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="id2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Employee ID #2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="employeeLName">Last Name</label>
+                        <input type="text" class="form-control" id="employeeLName" value="Chow">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeFName">First Name</label>
+                        <input type="text" class="form-control" id="employeeFName" value="Richard">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeAddress">Address</label>
+                        <input type="text" class="form-control" id="employeeAddress" value="1010 Fake Blvd, North Pole, H0H 0H0, Canada">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeePhoneNumber">Phone Number</label>
+                        <input type="text" class="form-control" id="employeePhoneNumber" value="(111) 444-5555">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">Email Address</label>
+                        <input type="email" class="form-control" id="employeeEmail" value="richard@chow.ca">
+                    </div>
+                    <p><b>Employee-related details</b></p>
+                    <div class="form-group">
+                        <label for="employeeRole">Role</label>
+                        <select name="employeeRole" id="employeeRole" class="custom-select">
+                            <option value="Manager">Manager</option>
+                            <option value="Cook">Cook</option>
+                            <option selected value="Delivery Driver">Delivery Driver</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">Wage</label>
+                        <input type="number" class="form-control" id="employeeWage" value="20.00" min="15.00" step=".01">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">SIN</label>
+                        <input type="number" class="form-control" id="employeeWage" value="321321321">
+                    </div>
+                    <div class="float-md-right">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="id3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Employee ID #3</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="employeeLName">Last Name</label>
+                        <input type="text" class="form-control" id="employeeLName" value="Grande">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeFName">First Name</label>
+                        <input type="text" class="form-control" id="employeeFName" value="Leinard">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeAddress">Address</label>
+                        <input type="text" class="form-control" id="employeeAddress" value="543 CPSC Pkwy, North Pole, H0H 0H0, Canada">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeePhoneNumber">Phone Number</label>
+                        <input type="text" class="form-control" id="employeePhoneNumber" value="(111) 456-8989">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">Email Address</label>
+                        <input type="email" class="form-control" id="employeeEmail" value="leinard@grande.ca">
+                    </div>
+                    <p><b>Employee-related details</b></p>
+                    <div class="form-group">
+                        <label for="employeeRole">Role</label>
+                        <select name="employeeRole" id="employeeRole" class="custom-select">
+                            <option selected value="Manager">Manager</option>
+                            <option value="Cook">Cook</option>
+                            <option value="Delivery Driver">Delivery Driver</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">Wage</label>
+                        <input type="number" class="form-control" id="employeeWage" value="20.00" min="15.00" step=".01">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeEmail">SIN</label>
+                        <input type="number" class="form-control" id="employeeWage" value="741852963">
+                    </div>
+                    <div class="float-md-right">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="carid1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Car ID #1</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="carLicensePlate">License Plate</label>
+                        <input type="number" class="form-control" id="carLicensePlate" value="125419">
+                    </div>
+                    <div class="form-group">
+                        <label for="carColour">Colour</label>
+                        <input type="text" class="form-control" id="carColour" value="Red">
+                    </div>
+                    <div class="form-group">
+                        <label for="carModel">Model</label>
+                        <input type="text" class="form-control" id="carModel" value="Kia Soul 2020">
+                    </div>
+                    <div class="form-group">
+                        <label for="carIsActive">Is Active</label>
+                        <select name="employeeRole" id="carIsActive" class="custom-select">
+                            <option value=""></option>
+                            <option value="No">No</option>
+                            <option selected value="Yes">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="float-md-right">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="carid2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Car ID #2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="carLicensePlate">License Plate</label>
+                        <input type="number" class="form-control" id="carLicensePlate" value="914521">
+                    </div>
+                    <div class="form-group">
+                        <label for="carColour">Colour</label>
+                        <input type="text" class="form-control" id="carColour" value="Blue">
+                    </div>
+                    <div class="form-group">
+                        <label for="carModel">Model</label>
+                        <input type="text" class="form-control" id="carModel" value="Kia Soul 2020">
+                    </div>
+                    <div class="form-group">
+                        <label for="carIsActive">Is Active</label>
+                        <select name="employeeRole" id="carIsActive" class="custom-select">
+                            <option value=""></option>
+                            <option value="No">No</option>
+                            <option selected value="Yes">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="float-md-right">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>

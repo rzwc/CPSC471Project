@@ -1,0 +1,100 @@
+@{
+    ViewData["Title"] = "Deliver Orders";
+}
+
+<div>
+    <hr class="invisiblehr">
+    <h4 class="display-4 text-center">Deliver Orders</h4>
+    <hr>
+
+    <h4 class="text-center">Current Orders</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Order Number</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Address</th>
+                <th scope="col">Transaction Time</th>
+                <th scope="col">Assigned Driver</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Joe McJoeface</td>
+                <td>10 Appletree Lane, North Pole, H0H 0H0</td>
+                <td>December 25, 2021 13:05</td>
+                <td>Richard Chow</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#id1">
+                        <i class="lni lni-checkmark"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#id1">
+                        <i class="lni lni-phone"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Sarah Doe</td>
+                <td>12 Appletree Lane, North Pole, H0H 0H0</td>
+                <td>December 25, 2021 13:06</td>
+                <td>Richard Chow</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#id2">
+                        <i class="lni lni-checkmark"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#id2">
+                        <i class="lni lni-phone"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Thomas T. Train-Engine</td>
+                <td>14 Appletree Lane, North Pole, H0H 0H0</td>
+                <td>December 25, 2021 13:07</td>
+                <td>Richard Chow</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#id3">
+                        <i class="lni lni-checkmark"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#id3">
+                        <i class="lni lni-phone"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr class="invisiblehr">
+
+    <h4 class="text-center">Assigned Delivery Car(s) for: Richard Chow</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">License Plate</th>
+                <th scope="col">Colour</th>
+                <th scope="col">Model</th>
+                <th scope="col">Mileage (km)</th>
+                <th scope="col">Active?</th>
+                <th scope="col">Latitude</th>
+                <th scope="col">Longitude</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">125419</th>
+                <td>Red</td>
+                <td>Kia Soul 2020</td>
+                <td>123</td>
+                <td>True</td>
+                <td>90.0000° N</td>
+                <td>135.0000° W</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

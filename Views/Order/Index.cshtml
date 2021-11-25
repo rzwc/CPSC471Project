@@ -1,12 +1,399 @@
 @{
     ViewData["Title"] = "Place an Order";
 }
+
 <div>
     <hr class="invisiblehr">
     <div class="jumbotron text-center">
         <div class="container"></div>
             <h4 class="display-4">Place an Order</h4>
             <hr>
+        </div>
+    </div>
+
+
+    <!-- Carousel code taken from https://www.codeply.com/go/zjZsn1ly29 -->
+    <div class="container text-center my-3">
+        <h2 class="font-weight-light">Featured Items</h2>
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-lg-2">
+                            <div class="movie-card m-1">
+                                <div class="movie-img">
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80" class="img-fluid"></a>
+                                </div>
+                                <div class="movie-title">
+                                    <a href="#">
+                                        <p class="text-white text-sm-center font-small flex-center">Cake</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-2">
+                            <div class="movie-card m-1">
+                                <div class="movie-img">
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80" class="img-fluid"></a>
+                                </div>
+                                <div class="movie-title">
+                                    <a href="#">
+                                        <p class="text-white text-sm-center font-small flex-center">Pancakes</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-2">
+                            <div class="movie-card m-1">
+                                <div class="movie-img">
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80" class="img-fluid"></a>
+                                </div>
+                                <div class="movie-title">
+                                    <a href="#">
+                                        <p class="text-white text-sm-center font-small flex-center">Pasta</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-2">
+                            <div class="movie-card m-1">
+                                <div class="movie-img">
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="img-fluid"></a>
+                                </div>
+                                <div class="movie-title">
+                                    <a href="#">
+                                        <p class="text-white text-sm-center font-small flex-center">Salmon</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-2">
+                            <div class="movie-card m-1">
+                                <div class="movie-img">
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="img-fluid"></a>
+                                </div>
+                                <div class="movie-title">
+                                    <a href="#">
+                                        <p class="text-white text-sm-center font-small flex-center">Salad</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-2">
+                            <div class="movie-card m-1">
+                                <div class="movie-img">
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80" class="img-fluid"></a>
+                                </div>
+                                <div class="movie-title">
+                                    <a href="#">
+                                        <p class="text-white text-sm-center font-small flex-center">Meatballs</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-2">
+                            <div class="movie-card m-1">
+                                <div class="movie-img">
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="img-fluid"></a>
+                                </div>
+                                <div class="movie-title">
+                                    <a href="#">
+                                        <p class="text-white text-sm-center font-small flex-center">BBQ</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-2">
+                            <div class="movie-card m-1">
+                                <div class="movie-img">
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=722&q=80" class="img-fluid"></a>
+                                </div>
+                                <div class="movie-title">
+                                    <a href="#">
+                                        <p class="text-white text-sm-center font-small flex-center">Burger</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-dark w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next bg-dark w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="invisiblehr">
+
+    <div>
+        <div class="text-center">
+            <h2 class="font-weight-light">Breakfast Menu</h2>
+            <p>
+                Start off a wonderful with one of these delicious breakfast meals!
+            </p>
+            <small>Last Modified: September 8, 2021 10:34 AM</small>
+        </div>
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Cake">
+                <div class="card-body">
+                <h5 class="card-title">Coffee</h5>
+                <p class="card-text"><b>$1.50</b></p>
+                <p class="card-text">A refreshing cup of coffee</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coffee">Add to Order</button>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80" alt="Pancakes">
+                <div class="card-body">
+                <h5 class="card-title">Pancakes</h5>
+                <p class="card-text"><b>$8.00</b></p>
+                <p class="card-text">A nice stack of pancakes</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pancakes">Add to Order</button>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1542276867-c7f5032e1835?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=692&q=80" alt="Pancakes">
+                <div class="card-body">
+                <h5 class="card-title">Full Breakfast</h5>
+                <p class="card-text"><b>$12.00</b></p>
+                <p class="card-text">A full breakfast dish consisting of eggs to your liking, sausages, toast, bacon, tomatoes, and a cup of coffee</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#fullBreakfast">Add to Order</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="text-center">
+            <h2 class="font-weight-light">Lunch Menu</h2>
+            <p>
+                Enjoy a filling lunch meal with some fantastic selection of meals!
+            </p>
+            <small>Last Modified: October 7, 2021 11:47 AM</small>
+        </div>
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80" alt="Cake">
+                <div class="card-body">
+                <h5 class="card-title">Pasta</h5>
+                <p class="card-text"><b>$9.50</b></p>
+                <p class="card-text">Some scrumptious pasta</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pasta">Add to Order</button>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Pancakes">
+                <div class="card-body">
+                <h5 class="card-title">Salmon</h5>
+                <p class="card-text"><b>$15.00</b></p>
+                <p class="card-text">Freshly caught salmon in a wine sauce with chopped vegetables</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#salmon">Add to Order</button>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=722&q=80" alt="Pancakes">
+                <div class="card-body">
+                <h5 class="card-title">Eggs Benedict Burger</h5>
+                <p class="card-text"><b>$11.00</b></p>
+                <p class="card-text">A certified Angus beef burger with ham and an eggs benedict</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#burger">Add to Order</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="text-center">
+            <h2 class="font-weight-light">Dinner Menu</h2>
+            <p>
+                Finish off the day with an appetizing meal! 
+            </p>
+            <small>Last Modified: November 6, 2021 9:31 AM</small>
+        </div>
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80" alt="Cake">
+                <div class="card-body">
+                <h5 class="card-title">Meatballs</h5>
+                <p class="card-text"><b>$6.50</b></p>
+                <p class="card-text">Some meatballs (that we totally didn't buy from Ikea)</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#meatballs">Add to Order</button>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Pancakes">
+                <div class="card-body">
+                <h5 class="card-title">BBQ</h5>
+                <p class="card-text"><b>$20.00</b></p>
+                <p class="card-text">Texan BBQ with a variety of meats and sauces</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bbq">Add to Order</button>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Pancakes">
+                <div class="card-body">
+                <h5 class="card-title">Salad</h5>
+                <p class="card-text"><b>$4.00</b></p>
+                <p class="card-text">A freshly-prepared salad of assorted vegetables</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#salad">Add to Order</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="text-center">
+            <h2 class="font-weight-light">Drink Menu</h2>
+            <p>
+                Feeling thirsty? Refresh yourself with one of these drinks! 
+            </p>
+            <small>Last Modified: December 5, 2021 8:06 PM</small>
+        </div>
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Cake">
+                <div class="card-body">
+                <h5 class="card-title">Coffee</h5>
+                <p class="card-text"><b>$1.50</b></p>
+                <p class="card-text">A refreshing cup of coffee</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coffee">Add to Order</button>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1602904761432-f9ad96133982?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Pancakes">
+                <div class="card-body">
+                <h5 class="card-title">Water</h5>
+                <p class="card-text"><b>$0.00</b></p>
+                <p class="card-text">Some water, fresh from our kitchen sink tap</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#water">Add to Order</button>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1577680716097-9a565ddc2007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Pancakes">
+                <div class="card-body">
+                <h5 class="card-title">Orange Juice</h5>
+                <p class="card-text"><b>$5.00</b></p>
+                <p class="card-text">Some orange juice that we bought off the shelf at Walmart</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orangeJuice">Add to Order</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="coffee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Coffee</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="coffeeSize1" value="coffeeSmall">
+                            <label class="form-check-label" for="coffeeSize1">Small</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="coffeeSize2" value="coffeeMedium">
+                            <label class="form-check-label" for="coffeeSize2">Medium</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="coffeeSize3" value="coffeeLarge">
+                            <label class="form-check-label" for="coffeeSize3">Large</label>
+                        </div>
+                    </div>
+                    <div class="float-md-right">
+                        <button type="button" class="btn btn-primary">Add to Order</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="coffee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Coffee</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="coffeeSize1" value="coffeeSmall">
+                            <label class="form-check-label" for="coffeeSize1">Small</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="coffeeSize2" value="coffeeMedium">
+                            <label class="form-check-label" for="coffeeSize2">Medium</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="coffeeSize3" value="coffeeLarge">
+                            <label class="form-check-label" for="coffeeSize3">Large</label>
+                        </div>
+                    </div>
+                    <div class="float-md-right">
+                        <button type="button" class="btn btn-primary">Add to Order</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                </form>
+            </div>
+            </div>
         </div>
     </div>
 
