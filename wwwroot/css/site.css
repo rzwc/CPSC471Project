@@ -1,4 +1,4 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
@@ -44,6 +44,7 @@ html {
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  /* box-shadow: none; */
 }
 
 button.accept-policy {
@@ -63,13 +64,12 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  height: 100vh;
   width: 100vw;
 }
 
-html, body {
+/* html, body {
   margin: 0px;
-}
+} */
 
 .footer {
   position: absolute;
@@ -87,7 +87,7 @@ html, body {
   width: 100vw;
   position: relative;
   margin-left: -50vw;
-  height: 87.75vh;
+  height: 100vh;
   left: 50%;
   margin-top: -2vh;
 }
@@ -101,5 +101,66 @@ html, body {
 .invisiblehr {
   clear: both;
   visibility: hidden;
-  height: 5vh;
+  height: 3vh;
+}
+
+/* Carousel code taken from https://www.codeply.com/go/zjZsn1ly29 */
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* large - display 6 */
+@media (min-width: 992px) {
+  
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+  
+  .carousel-inner .carousel-item-left.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+.movie-img {
+  height:200px;
+  width: 150px;
+  background-color:  aqua;
+  overflow: hidden;
+  background-image: url("https://i.hizliresim.com/mX07R4.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  object-fit: fill;
+}
+
+.movie-title {
+  height: 40px; 
+  width:150px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.invisible-bullets {
+  list-style: none;
+}
+
+.left-justify {
+  text-align: left;
 }
