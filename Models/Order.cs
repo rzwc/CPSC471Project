@@ -29,14 +29,5 @@ namespace RestaurantMS.Models
         /// Transaction time.
         /// </summary>
         public int Transaction_time { get; set; }
-
-        public Order(int driverID, int customerID, string deliveryTime, decimal totalCost, int transactionTime)
-        {
-            this.Driver_ID = driverID;
-            this.Customer_ID = customerID;
-            this.Delivery_time = deliveryTime;
-            this.Total_cost = totalCost;
-            this.Transaction_time = transactionTime;
-        }
     }
 }

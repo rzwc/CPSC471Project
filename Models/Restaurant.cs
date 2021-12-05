@@ -24,13 +24,5 @@ namespace RestaurantMS.Models
         /// Delivery radius from restaurant address.
         /// </summary>
         public int Delivery_range { get; set; }
-
-        public Restaurant(string address, string startTime, string endTime, int deliveryRange)
-        {
-            this.Address = address;
-            this.Start_Time = startTime;
-            this.End_Time = endTime;
-            this.Delivery_range = deliveryRange;
-        }
     }
 }
