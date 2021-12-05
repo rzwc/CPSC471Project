@@ -26,13 +26,5 @@ namespace RestaurantMS.Models
         /// </summary>
         [ForeignKey("Customer_ID")] public int Customer_ID { get; set; }
 
-        public Review(int customerID, int storeID, int rating, string comment)
-        {
-            this.Customer_ID = customerID;
-            this.Store_ID = storeID;
-            this.Rating = rating;
-            this.Comment = comment;
-        }
-
     }
 }

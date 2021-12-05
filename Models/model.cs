@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace CPSC471Project.Models
 {
     public class Account

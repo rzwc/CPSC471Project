@@ -32,16 +32,5 @@ namespace RestaurantMS.Models
         /// Latitude of car location.
         /// </summary>
         public decimal Latitude { get; set; }
-
-        public DeliveryCar(string licensePlate, int mileage, string carColour, string carModel, bool isActive, decimal longitude, decimal latitude)
-        {
-            this.License_plate = licensePlate;
-            this.Mileage = mileage;
-            this.Car_colour = carColour;
-            this.Car_model = carModel;
-            this.Is_active = isActive;
-            this.Longitude = longitude;
-            this.Latitude = latitude;
-        }
     }
 }
