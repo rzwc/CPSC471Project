@@ -1,0 +1,10 @@
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\ref\RestaurantMS.dll
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.csproj.AssemblyReference.cache
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.AssemblyInfoInputs.cache
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.AssemblyInfo.cs
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.csproj.CoreCompileInputs.cache
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.RazorAssemblyInfo.cache
+C:\Users\rzwch\Desktop\471Project\CPSC471Project\obj\Debug\net5.0\RestaurantMS.RazorAssemblyInfo.cs
