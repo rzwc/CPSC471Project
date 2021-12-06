@@ -1,4 +1,4 @@
-namespace CPSC471Project.Models
+namespace RestaurantMS.Models
 {
     public class Account
     {
