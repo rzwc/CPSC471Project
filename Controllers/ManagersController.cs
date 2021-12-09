@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CPSC471Project.Models;
+using RestaurantMS.Models;
 using RestaurantMS.Data;
 
 namespace RestaurantMS.Controllers
