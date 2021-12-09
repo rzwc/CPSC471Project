@@ -81,7 +81,7 @@ namespace RestaurantMS.Controllers
             _context.Review.Add(review);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetReview", new { id = review.Review_ID }, review);
+            return CreatedAtAction(nameof(GetReview), new { id = review.Review_ID }, review);
         }
 
         // DELETE: api/Reviews/5

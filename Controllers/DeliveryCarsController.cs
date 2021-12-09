@@ -95,7 +95,7 @@ namespace RestaurantMS.Controllers
                 }
             }
 
-            return CreatedAtAction("GetDeliveryCar", new { id = deliveryCar.License_plate }, deliveryCar);
+            return CreatedAtAction(nameof(GetDeliveryCar), new { id = deliveryCar.License_plate }, deliveryCar);
         }
 
         // DELETE: api/DeliveryCars/5

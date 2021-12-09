@@ -81,7 +81,7 @@ namespace RestaurantMS.Controllers
             _context.Order.Add(order);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetOrder", new { id = order.Order_number }, order);
+            return CreatedAtAction(nameof(GetOrder), new { id = order.Order_number }, order);
         }
 
         // DELETE: api/Orders/5
