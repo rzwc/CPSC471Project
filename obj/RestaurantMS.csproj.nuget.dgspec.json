@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rzwch\\Desktop\\471Project\\CPSC471Project\\RestaurantMS.csproj": {}
+    "C:\\Users\\Richard\\source\\repos\\CPSC471Project\\RestaurantMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rzwch\\Desktop\\471Project\\CPSC471Project\\RestaurantMS.csproj": {
+    "C:\\Users\\Richard\\source\\repos\\CPSC471Project\\RestaurantMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rzwch\\Desktop\\471Project\\CPSC471Project\\RestaurantMS.csproj",
+        "projectUniqueName": "C:\\Users\\Richard\\source\\repos\\CPSC471Project\\RestaurantMS.csproj",
         "projectName": "RestaurantMS",
-        "projectPath": "C:\\Users\\rzwch\\Desktop\\471Project\\CPSC471Project\\RestaurantMS.csproj",
-        "packagesPath": "C:\\Users\\rzwch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rzwch\\Desktop\\471Project\\CPSC471Project\\obj\\",
+        "projectPath": "C:\\Users\\Richard\\source\\repos\\CPSC471Project\\RestaurantMS.csproj",
+        "packagesPath": "C:\\Users\\Richard\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Richard\\source\\repos\\CPSC471Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rzwch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Richard\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,24 +81,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
