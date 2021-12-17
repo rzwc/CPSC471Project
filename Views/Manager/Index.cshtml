@@ -1,3 +1,5 @@
+@model ReviewViewModel
+
 @{
     ViewData["Title"] = "Manage Restaurant";
 }
@@ -146,21 +148,14 @@
             </tr>
         </thead>
         <tbody>
+            @foreach (var review in Model.Reviews)
+            {
             <tr>
-                <th scope="row">John Customer</th>
-                <td>5</td>
-                <td>Really enjoyed the food here. Can't wait to visit again!</td>
+                <th scope="row">@review.Customer_ID</th>
+                <td>@review.Rating</td>
+                <td>@review.Comment</td>
             </tr>
-            <tr>
-                <th scope="row">Erin Client</th>
-                <td>5</td>
-                <td>I love the atmosphere and the food here!</td>
-            </tr>
-            <tr>
-                <th scope="row">Sam Person</th>
-                <td>4</td>
-                <td>My eggs were too salty!</td>
-            </tr>
+            }
         </tbody>
     </table>
 
