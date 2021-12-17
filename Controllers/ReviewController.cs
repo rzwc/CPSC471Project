@@ -6,21 +6,29 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RestaurantMS.Models;
+using RestaurantMS.Services;
 
 namespace RestaurantMS.Controllers
 {
     public class ReviewController : Controller
     {
-        private readonly ILogger<ReviewController> _logger;
+        // private readonly ILogger<ReviewController> _logger;
+        private readonly IReviewService _reviewService;
 
-        public ReviewController(ILogger<ReviewController> logger)
+        public ReviewController(IReviewService reviewService)
         {
-            _logger = logger;
+            _reviewService = reviewService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var reviews = await _reviewService.GetAllReviewsAsync();
+
+            var model = new ReviewViewModel()
+            {
+                Reviews = reviews
+            };
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
