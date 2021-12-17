@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace RestaurantMS.Models
 {
@@ -32,5 +34,7 @@ namespace RestaurantMS.Models
         /// Latitude of car location.
         /// </summary>
         public decimal Latitude { get; set; }
+        [ForeignKey("Store_ID")] public int Store_ID { get; set; }
+
     }
 }

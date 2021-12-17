@@ -29,5 +29,6 @@ namespace RestaurantMS.Models
         /// Transaction time.
         /// </summary>
         public int Transaction_time { get; set; }
+        [ForeignKey("Store_ID")] public int Store_ID { get; set; }
     }
 }

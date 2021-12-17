@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RestaurantMS.Models
 {
@@ -11,5 +12,6 @@ namespace RestaurantMS.Models
         public string Phone { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
+        [ForeignKey("Store_ID")] public int Store_ID { get; set; }
     }
 }

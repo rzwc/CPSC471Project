@@ -11,5 +11,6 @@ namespace RestaurantMS.Models
         public string Category { get; set; }
         public string Description { get; set; }
         [ForeignKey("Store_ID")] public int Store_ID { get; set; }
+
     }
 }

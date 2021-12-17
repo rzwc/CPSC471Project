@@ -236,6 +236,9 @@ namespace RestaurantMS.Data.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("Store_ID")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Account_Id");
 
                     b.ToTable("Account");
@@ -262,6 +265,9 @@ namespace RestaurantMS.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Mileage")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Store_ID")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("License_plate");
@@ -411,6 +417,9 @@ namespace RestaurantMS.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Driver_ID")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Store_ID")
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Total_cost")

@@ -24,5 +24,6 @@ namespace RestaurantMS.Models
         /// Delivery radius from restaurant address.
         /// </summary>
         public int Delivery_range { get; set; }
+
     }
 }
