@@ -195,3 +195,13 @@ C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\RestaurantMS.dll
 C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\ref\RestaurantMS.dll
 C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\RestaurantMS.pdb
 C:\Users\Richard\Source\Repos\CPSC471Project\obj\Debug\net5.0\RestaurantMS.genruntimeconfig.cache
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\FoodItems\Create.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\FoodItems\Delete.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\FoodItems\Details.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\FoodItems\Edit.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\FoodItems\Index.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\Reviews\Create.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\Reviews\Delete.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\Reviews\Details.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\Reviews\Edit.cshtml.g.cs
+C:\Users\Richard\source\repos\CPSC471Project\obj\Debug\net5.0\Razor\Views\Reviews\Index.cshtml.g.cs
