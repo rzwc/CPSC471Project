@@ -25,5 +25,6 @@ namespace RestaurantMS.Data
         public DbSet<RestaurantMS.Models.DrinkItem> DrinkItem { get; set; }
         public DbSet<RestaurantMS.Models.FoodItem> FoodItem { get; set; }
         public DbSet<RestaurantMS.Models.Menu> Menu { get; set; }
+        public DbSet<RestaurantMS.Models.Item> Item { get; set; }
     }
 }
