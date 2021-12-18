@@ -1,28 +1,29 @@
 ﻿@model IEnumerable<RestaurantMS.Models.Review>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Reviews";
 }
 
-<h1>Index</h1>
+<h1>Reviews</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+Here are what our customers have to say:
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Comment)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Rating)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Store_ID)
+                @Html.DisplayNameFor(model => model.Comment)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customer_ID)
+                Store ID
+            </th>
+            <th>
+                Customer ID
             </th>
             <th></th>
         </tr>
@@ -31,10 +32,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Comment)
+                @Html.DisplayFor(modelItem => item.Rating)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Rating)
+                @Html.DisplayFor(modelItem => item.Comment)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Store_ID)

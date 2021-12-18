@@ -1,12 +1,14 @@
 ﻿@model RestaurantMS.Models.Review
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Write a Review";
 }
 
-<h1>Create</h1>
+<hr class="invisiblehr">
+<h4 class="display-4 text-center">Write a Review</h4>
+<hr>
 
-<h4>Review</h4>
+<p class="text-center">We would appreciate you telling us about your experience!</p
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,7 +21,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="Rating" class="control-label"></label>
-                <input asp-for="Rating" class="form-control" />
+                <select asp-for="Rating" class="form-control">
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
                 <span asp-validation-for="Rating" class="text-danger"></span>
             </div>
             <div class="form-group">
